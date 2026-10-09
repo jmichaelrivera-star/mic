@@ -1,0 +1,723 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="John Michael — Professional Virtual Assistant helping busy founders and teams with admin support, email management, scheduling, and social media." />
+  <meta name="author" content="John michael" />
+  <meta name="theme-color" content="#6d5efc" />
+
+  <title>John Michael | Virtual Assistant</title>
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap"
+    rel="stylesheet"
+  />
+
+  <!-- Styles -->
+  <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+  <!-- ==================== SCROLL PROGRESS ==================== -->
+  <div class="scroll-progress" id="scrollProgress" aria-hidden="true"></div>
+
+  <!-- ==================== HEADER / NAV ==================== -->
+  <header class="header" id="header">
+    <nav class="nav container" aria-label="Main navigation">
+      <a href="#home" class="nav__logo">
+        <span class="nav__logo-mark">JR</span>
+        <span class="nav__logo-text"><span>John michael</span></span>
+      </a>
+
+      <div class="nav__menu" id="navMenu">
+        <ul class="nav__list">
+          <li><a href="#home" class="nav__link is-active">Home</a></li>
+          <li><a href="#about" class="nav__link">About</a></li>
+          <li><a href="#services" class="nav__link">Services</a></li>
+          <li><a href="#skills" class="nav__link">Skills</a></li>
+          <li><a href="#work" class="nav__link">Work</a></li>
+          <li><a href="#contact" class="nav__link">Contact</a></li>
+        </ul>
+
+        <a href="#contact" class="btn btn--primary nav__cta">Hire Me</a>
+      </div>
+
+      <div class="nav__actions">
+        <button
+          class="icon-btn theme-toggle"
+          id="themeToggle"
+          type="button"
+          aria-label="Toggle dark mode"
+        >
+          <svg class="icon icon--sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <circle cx="12" cy="12" r="5" />
+            <line x1="12" y1="1" x2="12" y2="3" />
+            <line x1="12" y1="21" x2="12" y2="23" />
+            <line x1="4.22" y1="4.22" x2="5.64" y2="5.64" />
+            <line x1="18.36" y1="18.36" x2="19.78" y2="19.78" />
+            <line x1="1" y1="12" x2="3" y2="12" />
+            <line x1="21" y1="12" x2="23" y2="12" />
+            <line x1="4.22" y1="19.78" x2="5.64" y2="18.36" />
+            <line x1="18.36" y1="5.64" x2="19.78" y2="4.22" />
+          </svg>
+          <svg class="icon icon--moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z" />
+          </svg>
+        </button>
+
+        <button class="nav__toggle" id="navToggle" type="button" aria-label="Open menu" aria-expanded="false" aria-controls="navMenu">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </nav>
+  </header>
+
+  <div class="nav__overlay" id="navOverlay" aria-hidden="true"></div>
+
+  <main>
+    <!-- ==================== HERO (PICTURE ON TOP) ==================== -->
+    <section class="hero section" id="home">
+      <div class="hero__glow" aria-hidden="true"></div>
+
+      <div class="container hero__container">
+        <!-- ✅ Picture on top -->
+        <div class="hero__media reveal">
+          <div class="hero__ring" aria-hidden="true"></div>
+          <div class="hero__image-wrap">
+            <img
+              src="JR Monogram.png"
+              alt="Portrait of John Michae, Virtual Assistant"
+              class="hero__image"
+              width="600"
+              height="600"
+              loading="eager"
+            />
+          </div>
+
+          <span class="hero__status">
+            <span class="hero__status-dot" aria-hidden="true"></span>
+            Available for work
+          </span>
+
+          <span class="hero__float hero__float--1" aria-hidden="true">📅</span>
+          <span class="hero__float hero__float--2" aria-hidden="true">✉️</span>
+          <span class="hero__float hero__float--3" aria-hidden="true">📊</span>
+        </div>
+
+        <!-- Content below picture -->
+        <div class="hero__content">
+          <p class="hero__eyebrow reveal" style="--delay: .05s">Hello, I'm</p>
+
+          <h1 class="hero__title reveal" style="--delay: .1s">John Michael</h1>
+
+          <h2 class="hero__subtitle reveal" style="--delay: .15s">
+            <span class="hero__typed" id="typed" aria-live="polite"></span>
+            <span class="hero__caret" aria-hidden="true"></span>
+          </h2>
+
+          <p class="hero__text reveal" style="--delay: .2s">
+            I help busy founders, coaches, and small teams reclaim 20+ hours a week
+            by handling the admin, the inbox, the calendar, and the chaos — so you
+            can focus on growing your business.
+          </p>
+
+          <div class="hero__cta reveal" style="--delay: .25s">
+            <a href="#contact" class="btn btn--primary">
+              Let's Work Together
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <line x1="5" y1="12" x2="19" y2="12" />
+                <polyline points="12 5 19 12 12 19" />
+              </svg>
+            </a>
+            <a href="#work" class="btn btn--ghost">View My Work</a>
+          </div>
+
+          <ul class="hero__socials reveal" style="--delay: .3s">
+            <li>
+              <a href="#" class="icon-btn" aria-label="LinkedIn profile">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                  <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-4 0v7h-4v-7a6 6 0 0 1 6-6z" />
+                  <rect x="2" y="9" width="4" height="12" />
+                  <circle cx="4" cy="4" r="2" />
+                </svg>
+              </a>
+            </li>
+            <li>
+              <a href="#" class="icon-btn" aria-label="Twitter profile">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                  <path d="M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z" />
+                </svg>
+              </a>
+            </li>
+            <li>
+              <a href="#" class="icon-btn" aria-label="Instagram profile">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                  <rect x="2" y="2" width="20" height="20" rx="5" />
+                  <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z" />
+                  <line x1="17.5" y1="6.5" x2="17.51" y2="6.5" />
+                </svg>
+              </a>
+            </li>
+            <li>
+              <a href="mailto:hello@jmichael.com" class="icon-btn" aria-label="Send an email">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                  <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z" />
+                  <polyline points="22,6 12,13 2,6" />
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <a href="#about" class="hero__scroll" aria-label="Scroll to about section">
+        <span class="hero__mouse" aria-hidden="true"></span>
+      </a>
+    </section>
+
+    <!-- ==================== ABOUT ==================== -->
+    <section class="section" id="about">
+      <div class="container">
+        <div class="section__head reveal">
+          <span class="section__tag">About Me</span>
+          <h2 class="section__title">Your behind-the-scenes <span class="gradient-text">powerhouse</span></h2>
+          <p class="section__subtitle">
+            Detail-obsessed, proactive, and genuinely invested in your success.
+          </p>
+        </div>
+
+        <div class="about">
+          <div class="about__text reveal">
+            <p>
+              Hi! I'm Michael — a full-time Virtual Assistant with over
+              <strong>5 years</strong> of experience supporting entrepreneurs,
+              executives, and growing agencies across the US, UK, and Australia.
+            </p>
+            <p>
+              I don't just tick boxes. I learn how you work, spot the bottlenecks,
+              and build simple systems that keep everything moving — inboxes at
+              zero, calendars conflict-free, and clients feeling cared for.
+            </p>
+            <p>
+              When I'm not clearing an inbox, you'll find me testing productivity
+              tools, building Notion dashboards, or drinking an unreasonable
+              amount of coffee. ☕
+            </p>
+
+            <ul class="about__facts">
+              <li><span>📍</span> Based in Manila · Working worldwide</li>
+              <li><span>🕒</span> Flexible across US / UK / AU time zones</li>
+              <li><span>💬</span> Fluent English · Excellent written comms</li>
+              <li><span>🔒</span> NDA-friendly &amp; GDPR aware</li>
+            </ul>
+
+            <a href="#" class="btn btn--primary" download>
+              Download CV
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4" />
+                <polyline points="7 10 12 15 17 10" />
+                <line x1="12" y1="15" x2="12" y2="3" />
+              </svg>
+            </a>
+          </div>
+
+          <div class="about__stats reveal" style="--delay: .1s">
+            <div class="stat-card">
+              <h3 class="stat-card__num" data-count="150" data-suffix="+">0</h3>
+              <p class="stat-card__label">Projects Completed</p>
+            </div>
+            <div class="stat-card">
+              <h3 class="stat-card__num" data-count="80" data-suffix="+">0</h3>
+              <p class="stat-card__label">Happy Clients</p>
+            </div>
+            <div class="stat-card">
+              <h3 class="stat-card__num" data-count="5" data-suffix="+">0</h3>
+              <p class="stat-card__label">Years Experience</p>
+            </div>
+            <div class="stat-card">
+              <h3 class="stat-card__num" data-count="1200" data-suffix="+">0</h3>
+              <p class="stat-card__label">Hours Saved</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== SERVICES ==================== -->
+    <section class="section section--soft" id="services">
+      <div class="container">
+        <div class="section__head reveal">
+          <span class="section__tag">Services</span>
+          <h2 class="section__title">How I can <span class="gradient-text">help you</span></h2>
+          <p class="section__subtitle">
+            Pick a single service or bundle them into a custom retainer.
+          </p>
+        </div>
+
+        <div class="services">
+          <article class="service-card reveal">
+            <div class="service-card__icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <rect x="3" y="4" width="18" height="18" rx="2" />
+                <line x1="16" y1="2" x2="16" y2="6" />
+                <line x1="8" y1="2" x2="8" y2="6" />
+                <line x1="3" y1="10" x2="21" y2="10" />
+              </svg>
+            </div>
+            <h3 class="service-card__title">Calendar &amp; Scheduling</h3>
+            <p class="service-card__text">
+              Meeting coordination, time-zone juggling, reminders, and travel
+              itineraries — no more double bookings.
+            </p>
+          </article>
+
+          <article class="service-card reveal" style="--delay: .06s">
+            <div class="service-card__icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z" />
+                <polyline points="22,6 12,13 2,6" />
+              </svg>
+            </div>
+            <h3 class="service-card__title">Inbox Management</h3>
+            <p class="service-card__text">
+              Filters, labels, canned responses, and priority triage that takes
+              you from 2,000 unread to inbox zero.
+            </p>
+          </article>
+
+          <article class="service-card reveal" style="--delay: .12s">
+            <div class="service-card__icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <line x1="12" y1="20" x2="12" y2="10" />
+                <line x1="18" y1="20" x2="18" y2="4" />
+                <line x1="6" y1="20" x2="6" y2="16" />
+              </svg>
+            </div>
+            <h3 class="service-card__title">Data Entry &amp; Research</h3>
+            <p class="service-card__text">
+              CRM cleanup, lead lists, spreadsheets, competitor research, and
+              reports you can actually read.
+            </p>
+          </article>
+
+          <article class="service-card reveal" style="--delay: .18s">
+            <div class="service-card__icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z" />
+              </svg>
+            </div>
+            <h3 class="service-card__title">Customer Support</h3>
+            <p class="service-card__text">
+              Friendly, on-brand replies across email and chat with fast
+              response times and clean ticket handoffs.
+            </p>
+          </article>
+
+          <article class="service-card reveal" style="--delay: .24s">
+            <div class="service-card__icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <path d="M11 4H4a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2v-7" />
+                <path d="M18.5 2.5a2.121 2.121 0 0 1 3 3L12 15l-4 1 1-4 9.5-9.5z" />
+              </svg>
+            </div>
+            <h3 class="service-card__title">Social Media &amp; Content</h3>
+            <p class="service-card__text">
+              Content calendars, Canva graphics, captions, scheduling, and
+              community engagement done consistently.
+            </p>
+          </article>
+
+          <article class="service-card reveal" style="--delay: .3s">
+            <div class="service-card__icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <circle cx="11" cy="11" r="8" />
+                <line x1="21" y1="21" x2="16.65" y2="16.65" />
+              </svg>
+            </div>
+            <h3 class="service-card__title">Ops &amp; Systems Setup</h3>
+            <p class="service-card__text">
+              SOPs, Notion dashboards, automation with Zapier or Make, and
+              project management that runs itself.
+            </p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== SKILLS ==================== -->
+    <section class="section" id="skills">
+      <div class="container">
+        <div class="section__head reveal">
+          <span class="section__tag">Skills</span>
+          <h2 class="section__title">Tools I use <span class="gradient-text">every day</span></h2>
+          <p class="section__subtitle">Comfortable learning new stacks fast — these are my daily drivers.</p>
+        </div>
+
+        <div class="skills">
+          <div class="skills__bars reveal" id="skillBars">
+            <div class="skill">
+              <div class="skill__head">
+                <span class="skill__name">Email &amp; Inbox Management</span>
+                <span class="skill__pct">98%</span>
+              </div>
+              <div class="skill__track"><div class="skill__fill" data-level="98"></div></div>
+            </div>
+
+            <div class="skill">
+              <div class="skill__head">
+                <span class="skill__name">Calendar &amp; Travel Coordination</span>
+                <span class="skill__pct">95%</span>
+              </div>
+              <div class="skill__track"><div class="skill__fill" data-level="95"></div></div>
+            </div>
+
+            <div class="skill">
+              <div class="skill__head">
+                <span class="skill__name">Social Media Management</span>
+                <span class="skill__pct">90%</span>
+              </div>
+              <div class="skill__track"><div class="skill__fill" data-level="90"></div></div>
+            </div>
+
+            <div class="skill">
+              <div class="skill__head">
+                <span class="skill__name">Data Entry &amp; CRM</span>
+                <span class="skill__pct">92%</span>
+              </div>
+              <div class="skill__track"><div class="skill__fill" data-level="92"></div></div>
+            </div>
+
+            <div class="skill">
+              <div class="skill__head">
+                <span class="skill__name">Project Management</span>
+                <span class="skill__pct">88%</span>
+              </div>
+              <div class="skill__track"><div class="skill__fill" data-level="88"></div></div>
+            </div>
+          </div>
+
+          <div class="skills__tools reveal" style="--delay: .12s">
+            <h3 class="skills__tools-title">Daily Toolbox</h3>
+            <ul class="tool-grid">
+              <li class="tool">Gmail &amp; Outlook</li>
+              <li class="tool">Google Workspace</li>
+              <li class="tool">Notion</li>
+              <li class="tool">Asana</li>
+              <li class="tool">Trello</li>
+              <li class="tool">Slack</li>
+              <li class="tool">Zoom</li>
+              <li class="tool">Calendly</li>
+              <li class="tool">Canva</li>
+              <li class="tool">HubSpot</li>
+              <li class="tool">Zapier</li>
+              <li class="tool">QuickBooks</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== WORK / PORTFOLIO ==================== -->
+    <section class="section section--soft" id="work">
+      <div class="container">
+        <div class="section__head reveal">
+          <span class="section__tag">Portfolio</span>
+          <h2 class="section__title">Recent <span class="gradient-text">projects</span></h2>
+          <p class="section__subtitle">A snapshot of the work I've delivered for clients.</p>
+        </div>
+
+        <div class="filters reveal" id="filters" role="tablist" aria-label="Portfolio filters">
+          <button class="filter is-active" data-filter="all" type="button">All</button>
+          <button class="filter" data-filter="admin" type="button">Admin</button>
+          <button class="filter" data-filter="social" type="button">Social</button>
+          <button class="filter" data-filter="systems" type="button">Systems</button>
+        </div>
+
+        <div class="work-grid" id="workGrid">
+          <article class="work-card reveal" data-category="admin">
+            <div class="work-card__thumb work-card__thumb--1">
+              <span class="work-card__emoji" aria-hidden="true">📥</span>
+            </div>
+            <div class="work-card__body">
+              <span class="work-card__tag">Admin</span>
+              <h3 class="work-card__title">Inbox Zero System</h3>
+              <p class="work-card__text">
+                Rebuilt a 4,000-email inbox with filters, labels, and templates —
+                cut response time by 65%.
+              </p>
+            </div>
+          </article>
+
+          <article class="work-card reveal" style="--delay: .06s" data-category="social">
+            <div class="work-card__thumb work-card__thumb--2">
+              <span class="work-card__emoji" aria-hidden="true">📱</span>
+            </div>
+            <div class="work-card__body">
+              <span class="work-card__tag">Social</span>
+              <h3 class="work-card__title">90-Day Content Calendar</h3>
+              <p class="work-card__text">
+                Planned and scheduled 3 months of posts for a wellness coach,
+                lifting engagement 3x.
+              </p>
+            </div>
+          </article>
+
+          <article class="work-card reveal" style="--delay: .12s" data-category="systems">
+            <div class="work-card__thumb work-card__thumb--3">
+              <span class="work-card__emoji" aria-hidden="true">⚙️</span>
+            </div>
+            <div class="work-card__body">
+              <span class="work-card__tag">Systems</span>
+              <h3 class="work-card__title">Agency SOP Library</h3>
+              <p class="work-card__text">
+                Documented 28 repeatable processes in Notion, onboarding new VAs
+                in half the time.
+              </p>
+            </div>
+          </article>
+
+          <article class="work-card reveal" style="--delay: .18s" data-category="admin">
+            <div class="work-card__thumb work-card__thumb--4">
+              <span class="work-card__emoji" aria-hidden="true">✈️</span>
+            </div>
+            <div class="work-card__body">
+              <span class="work-card__tag">Admin</span>
+              <h3 class="work-card__title">Executive Travel Desk</h3>
+              <p class="work-card__text">
+                Managed 40+ multi-city trips with zero missed connections and
+                full expense reporting.
+              </p>
+            </div>
+          </article>
+
+          <article class="work-card reveal" style="--delay: .24s" data-category="systems">
+            <div class="work-card__thumb work-card__thumb--5">
+              <span class="work-card__emoji" aria-hidden="true">🔗</span>
+            </div>
+            <div class="work-card__body">
+              <span class="work-card__tag">Systems</span>
+              <h3 class="work-card__title">Zapier Automation Suite</h3>
+              <p class="work-card__text">
+                Connected forms, CRM, and Slack — eliminated 12 hours of manual
+                work per week.
+              </p>
+            </div>
+          </article>
+
+          <article class="work-card reveal" style="--delay: .3s" data-category="social">
+            <div class="work-card__thumb work-card__thumb--6">
+              <span class="work-card__emoji" aria-hidden="true">🎨</span>
+            </div>
+            <div class="work-card__body">
+              <span class="work-card__tag">Social</span>
+              <h3 class="work-card__title">Brand Refresh Rollout</h3>
+              <p class="work-card__text">
+                Coordinated a full rebrand across 5 platforms with a reusable
+                Canva template kit.
+              </p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== TESTIMONIALS ==================== -->
+    <section class="section" id="testimonials">
+      <div class="container">
+        <div class="section__head reveal">
+          <span class="section__tag">Testimonials</span>
+          <h2 class="section__title">What clients <span class="gradient-text">say</span></h2>
+        </div>
+
+        <div class="testimonials reveal" id="testimonials">
+          <div class="testimonials__viewport">
+            <div class="testimonials__track" id="testimonialTrack">
+              <blockquote class="testimonial">
+                <p class="testimonial__quote">
+                  “Michael took over my inbox and calendar in week one and I
+                  instantly got 15 hours back. She's proactive, sharp, and
+                  genuinely cares about the business.”
+                </p>
+                <footer class="testimonial__author">
+                  <img src="https://i.pravatar.cc/120?img=12" alt="" width="56" height="56" loading="lazy" />
+                  <div>
+                    <strong>Marcus Bennett</strong>
+                    <span>Founder, Northline Studio</span>
+                  </div>
+                </footer>
+              </blockquote>
+
+              <blockquote class="testimonial">
+                <p class="testimonial__quote">
+                  “The systems she built in Notion and Zapier are still running
+                  a year later. Best hire I've made for my agency, hands down.”
+                </p>
+                <footer class="testimonial__author">
+                  <img src="https://i.pravatar.cc/120?img=32" alt="" width="56" height="56" loading="lazy" />
+                  <div>
+                    <strong>Priya Raman</strong>
+                    <span>CEO, Bloom Digital</span>
+                  </div>
+                </footer>
+              </blockquote>
+
+              <blockquote class="testimonial">
+                <p class="testimonial__quote">
+                  “My socials went from sporadic to consistent in a month.
+                  Engagement tripled and I never had to chase a single post.”
+                </p>
+                <footer class="testimonial__author">
+                  <img src="https://i.pravatar.cc/120?img=25" alt="" width="56" height="56" loading="lazy" />
+                  <div>
+                    <strong>Chloe Dawson</strong>
+                    <span>Wellness Coach</span>
+                  </div>
+                </footer>
+              </blockquote>
+            </div>
+          </div>
+
+          <div class="testimonials__dots" id="testimonialDots" role="tablist" aria-label="Testimonial navigation"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== CONTACT ==================== -->
+    <section class="section section--soft" id="contact">
+      <div class="container">
+        <div class="section__head reveal">
+          <span class="section__tag">Contact</span>
+          <h2 class="section__title">Let's build your <span class="gradient-text">dream workflow</span></h2>
+          <p class="section__subtitle">Tell me what's eating your time — I'll reply within 24 hours.</p>
+        </div>
+
+        <div class="contact">
+          <aside class="contact__info reveal">
+            <a class="contact__item" href="mailto:hello@jmichael.com">
+              <span class="contact__icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                  <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z" />
+                  <polyline points="22,6 12,13 2,6" />
+                </svg>
+              </span>
+              <span>
+                <small>Email</small>
+                <strong>hello@jmichael.com</strong>
+              </span>
+            </a>
+
+            <a class="contact__item" href="tel:+15551234567">
+              <span class="contact__icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                  <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.9.34 1.85.57 2.81.7A2 2 0 0 1 22 16.92z" />
+                </svg>
+              </span>
+              <span>
+                <small>Phone</small>
+                <strong>+1 (555) 123-4567</strong>
+              </span>
+            </a>
+
+            <div class="contact__item">
+              <span class="contact__icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                  <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z" />
+                  <circle cx="12" cy="10" r="3" />
+                </svg>
+              </span>
+              <span>
+                <small>Location</small>
+                <strong>Nueva vizcava, PH · Remote</strong>
+              </span>
+            </div>
+
+            <div class="contact__note">
+              <span class="contact__pulse" aria-hidden="true"></span>
+              Currently accepting <strong>2 new clients</strong> for this quarter.
+            </div>
+          </aside>
+
+          <form class="contact__form reveal" id="contactForm" novalidate style="--delay: .1s">
+            <div class="field">
+              <label for="name">Full Name</label>
+              <input type="text" id="name" name="name" placeholder="Jane Smith" autocomplete="name" />
+              <p class="field__error" data-error-for="name"></p>
+            </div>
+
+            <div class="field">
+              <label for="email">Email Address</label>
+              <input type="email" id="email" name="email" placeholder="jmichael@gmail.com" autocomplete="email" />
+              <p class="field__error" data-error-for="email"></p>
+            </div>
+
+            <div class="field">
+              <label for="service">Service Needed</label>
+              <select id="service" name="service">
+                <option value="">Select a service…</option>
+                <option>Calendar &amp; Scheduling</option>
+                <option>Inbox Management</option>
+                <option>Data Entry &amp; Research</option>
+                <option>Customer Support</option>
+                <option>Social Media &amp; Content</option>
+                <option>Ops &amp; Systems Setup</option>
+              </select>
+              <p class="field__error" data-error-for="service"></p>
+            </div>
+
+            <div class="field">
+              <label for="message">Message</label>
+              <textarea id="message" name="message" rows="5" placeholder="Tell me a bit about your business and what you need help with…"></textarea>
+              <p class="field__error" data-error-for="message"></p>
+            </div>
+
+            <button type="submit" class="btn btn--primary btn--full">
+              Send Message
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <line x1="22" y1="2" x2="11" y2="13" />
+                <polygon points="22 2 15 22 11 13 2 9 22 2" />
+              </svg>
+            </button>
+
+            <p class="form-status" id="formStatus" role="status" aria-live="polite"></p>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ==================== FOOTER ==================== -->
+  <footer class="footer">
+    <div class="container footer__inner">
+      <a href="#home" class="nav__logo">
+        <span class="nav__logo-mark">JR</span>
+        <span class="nav__logo-text">John Michael<span>.</span></span>
+      </a>
+
+      <p class="footer__text">
+        © <span id="year"></span> michael . Crafted with care — and a lot of coffee.
+      </p>
+
+      <ul class="footer__socials">
+        <li><a href="#" aria-label="LinkedIn">in</a></li>
+        <li><a href="#" aria-label="Twitter">X</a></li>
+        <li><a href="#" aria-label="Instagram">ig</a></li>
+      </ul>
+    </div>
+  </footer>
+
+  <!-- ==================== BACK TO TOP ==================== -->
+  <button class="back-to-top" id="backToTop" type="button" aria-label="Back to top">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+      <line x1="12" y1="19" x2="12" y2="5" />
+      <polyline points="5 12 12 5 19 12" />
+    </svg>
+  </button>
+
+  <!-- Scripts -->
+  <script src="Script.js"></script>
+</body>
+</html>
